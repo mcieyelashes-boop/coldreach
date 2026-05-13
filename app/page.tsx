@@ -28,13 +28,13 @@ export default function Dashboard() {
   ]
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-slate-900">Dashboard</h1>
         <p className="text-slate-500 mt-1">Your cold campaign overview</p>
       </div>
 
-      <div className="grid grid-cols-4 gap-5 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 mb-6 md:mb-8">
         {stats.map(s => (
           <div key={s.label} className="bg-white rounded-xl border border-slate-200 p-5 shadow-sm">
             <p className="text-sm text-slate-500 font-medium">{s.label}</p>
@@ -44,7 +44,7 @@ export default function Dashboard() {
         ))}
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
           <h2 className="text-base font-semibold text-slate-800 mb-4">Recent Campaigns</h2>
           {recentCampaigns.length === 0 ? (

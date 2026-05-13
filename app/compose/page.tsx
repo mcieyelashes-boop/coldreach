@@ -94,13 +94,13 @@ Rules:
   }
 
   return (
-    <div className="p-8 max-w-6xl">
+    <div className="p-4 md:p-8 max-w-6xl">
       <div className="mb-6">
         <h1 className="text-2xl font-bold text-slate-900">Compose</h1>
         <p className="text-slate-500 mt-1">AI-powered cold email writer</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         {/* AI Panel */}
         <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
           <div className="flex items-center justify-between mb-5">

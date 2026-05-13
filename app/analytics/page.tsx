@@ -31,13 +31,13 @@ export default function AnalyticsPage() {
   }
 
   return (
-    <div className="p-8">
+    <div className="p-4 md:p-8">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-slate-900">Analytics</h1>
         <p className="text-slate-500 mt-1">Performance across all sent campaigns</p>
       </div>
 
-      <div className="grid grid-cols-4 gap-5 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-5 mb-6 md:mb-8">
         {[
           { label: 'Total Sent', value: totalSent, sub: `${sentCampaigns.length} campaigns`, color: 'text-indigo-600' },
           { label: 'Open Rate', value: pct(totalOpened, totalSent), sub: `${totalOpened} opened`, color: 'text-emerald-600' },
