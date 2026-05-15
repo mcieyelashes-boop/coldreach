@@ -90,21 +90,6 @@ export default function SettingsPage() {
           />
         </div>
 
-        {/* HubSpot */}
-        <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-xl">🔶</span>
-            <h2 className="font-semibold text-slate-800">HubSpot</h2>
-          </div>
-          <Field
-            label="Private App Token"
-            field="hubspotApiToken"
-            type="password"
-            placeholder="pat-na1-..."
-            hint="HubSpot → Settings → Integrations → Private Apps → Create"
-          />
-        </div>
-
         {/* AI Providers */}
         <div className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm">
           <div className="flex items-center gap-2 mb-4">
